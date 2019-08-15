@@ -6,13 +6,14 @@ require 'sqlite3'
 require 'byebug'
 require 'sinatra/activerecord'
 
-set :database, "sqlite3:pizzashop.db"
+set :database_file, "config/database.yml"
 
 class Product < ActiveRecord::Base
 
 
 end
 get '/' do
+  @products = Product.all
 	erb :index
 end
 
