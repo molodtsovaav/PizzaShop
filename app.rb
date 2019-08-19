@@ -42,6 +42,5 @@ def parse_orders_input orders_input
     arr2 = [id,cnt]
     arr.push arr2
   end
-  return arr
-
+  arr
 end
