@@ -32,7 +32,7 @@
 
 
 <form action="/place_order" method="POST">
-  <input name="order[order_input]" type="hidden" value="<%= @orders_input  %>"/>
+  <input name="order[orders_input]" type="hidden" value="<%= @orders_input  %>"/>
   <div class="form-group">
     <label>Name: </label>
     <input  name="order[name]" type="text" class="form-control"  aria-describedby="emailHelp" placeholder="Your name"  />
@@ -47,6 +47,5 @@
     <label>Address: </label>
     <textarea name="order[address]"  class="form-control "  aria-describedby="emailHelp" placeholder="Delivery address"></textarea>
   </div>
+    <button type="submit" class="btn btn-success btn-lg">Place this order!</button>
 </form>
-
-<button type="submit" class="btn btn-success btn-lg">Place this order!</button>
