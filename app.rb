@@ -10,6 +10,9 @@ set :database_file, "config/database.yml"
 
 class Product < ActiveRecord::Base
 
+end
+
+class Order < ActiveRecord::Base
 
 end
 get '/' do
